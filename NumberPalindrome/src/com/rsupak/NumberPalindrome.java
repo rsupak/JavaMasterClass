@@ -12,8 +12,6 @@ public class NumberPalindrome {
             reverseNumber *= (number < 10 ? 1 : 10);
             number /= 10;
         }
-        System.out.println(originalNumber);
-        System.out.println(reverseNumber);
         return reverseNumber == originalNumber;
     }
 }

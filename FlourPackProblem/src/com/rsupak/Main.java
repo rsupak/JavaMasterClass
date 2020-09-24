@@ -3,6 +3,6 @@ package com.rsupak;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        System.out.println(FlourPacker.canPack(4, 18, 19));
     }
 }

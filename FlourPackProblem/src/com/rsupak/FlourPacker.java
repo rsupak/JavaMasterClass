@@ -6,11 +6,13 @@ public class FlourPacker {
         int currentKilo = 0;
 
         // check if big bags help reach goal
-        while (bigCount > 0 && currentKilo < goal) {
+        while (bigCount > 0 && currentKilo + 5 <= goal) {
             currentKilo += 5;
             bigCount--;
             if (currentKilo == goal) return true;
         }
+        System.out.println(bigCount);
+        System.out.println(currentKilo);
 
         // check if small bags help reach goal
         while (smallCount > 0) {
